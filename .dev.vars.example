@@ -1,0 +1,9 @@
+# Copy to .dev.vars for local development (`npm run dev`). Never commit .dev.vars.
+# In production set it with `npx wrangler secret put TMDB_ACCESS_TOKEN` instead.
+
+# TMDB credentials (one of the two is enough): https://www.themoviedb.org/settings/api
+TMDB_ACCESS_TOKEN=
+TMDB_API_KEY=
+
+# Optional: show the account menu on localhost as if this email were signed in.
+DEV_ACCESS_EMAIL=

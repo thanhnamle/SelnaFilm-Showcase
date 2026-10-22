@@ -1,0 +1,44 @@
+{
+  "name": "slnanetfilm",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite build && vite preview",
+    "deploy": "vite build && wrangler deploy",
+    "typecheck": "tsc -b",
+    "cf-typegen": "wrangler types worker/env.d.ts --env-interface Env"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "5.104.0",
+    "clsx": "2.1.1",
+    "hls.js": "1.7.3",
+    "hono": "4.13.12",
+    "lucide-react": "1.49.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-router": "7.18.4",
+    "tailwind-merge": "3.7.0",
+    "zustand": "5.0.15"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "1.62.3",
+    "@cloudflare/workers-types": "4.20260702.1",
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "24.19.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "5.2.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "5.9.3",
+    "vite": "7.3.6",
+    "wrangler": "4.145.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "esbuild@0.28.1": true,
+    "workerd@1.20260930.2": true
+  }
+}

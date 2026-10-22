@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "selnafilm-demo",
+  "main": "./worker/index.ts",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    // The worker runs before every asset, so a gate in worker/gate.ts covers the whole app.
+    "run_worker_first": true
+  }
+  // Secret (never commit it): npx wrangler secret put TMDB_ACCESS_TOKEN
+}
