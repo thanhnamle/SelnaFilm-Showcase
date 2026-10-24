@@ -29,8 +29,8 @@ export default function ThemePicker() {
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        aria-label={t('gift.theme')}
-        title={t('gift.theme')}
+        aria-label={t('theme.label')}
+        title={t('theme.label')}
         className="grid size-9 place-items-center rounded-full border border-line bg-white/5 text-muted transition-colors hover:border-line-strong hover:text-ink"
       >
         <Palette className="size-4" />
@@ -38,8 +38,8 @@ export default function ThemePicker() {
 
       {open && (
         <div className="absolute top-12 right-0 z-50 w-64 animate-rise rounded-2xl border border-line bg-surface/95 p-3 shadow-2xl backdrop-blur-xl">
-          <p className="px-1 pb-2.5 text-xs font-semibold tracking-wider text-subtle uppercase">{t('gift.theme')}</p>
-          <div className="grid grid-cols-4 gap-2" role="radiogroup" aria-label={t('gift.theme')}>
+          <p className="px-1 pb-2.5 text-xs font-semibold tracking-wider text-subtle uppercase">{t('theme.label')}</p>
+          <div className="grid grid-cols-4 gap-2" role="radiogroup" aria-label={t('theme.label')}>
             {THEMES.map((preset) => {
               const selected = preset.id === theme;
               return (
@@ -48,8 +48,8 @@ export default function ThemePicker() {
                   type="button"
                   role="radio"
                   aria-checked={selected}
-                  aria-label={t(`gift.themes.${preset.id}` as Parameters<typeof t>[0])}
-                  title={t(`gift.themes.${preset.id}` as Parameters<typeof t>[0])}
+                  aria-label={t(`theme.presets.${preset.id}` as Parameters<typeof t>[0])}
+                  title={t(`theme.presets.${preset.id}` as Parameters<typeof t>[0])}
                   onClick={() => setTheme(preset.id)}
                   className={cn(
                     'grid aspect-square place-items-center rounded-xl ring-offset-2 ring-offset-surface transition-transform hover:scale-105',
@@ -62,7 +62,7 @@ export default function ThemePicker() {
               );
             })}
           </div>
-          <p className="mt-2.5 px-1 text-xs text-muted">{t(`gift.themes.${theme}` as Parameters<typeof t>[0])}</p>
+          <p className="mt-2.5 px-1 text-xs text-muted">{t(`theme.presets.${theme}` as Parameters<typeof t>[0])}</p>
         </div>
       )}
     </div>

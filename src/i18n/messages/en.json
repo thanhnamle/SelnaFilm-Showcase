@@ -58,7 +58,7 @@
     "animation": "Animation & anime",
     "donghua": "Donghua",
     "animatedMovies": "Animated movies",
-    "romance": "Romance for two"
+    "romance": "Romance"
   },
   "browse": {
     "moviesTitle": "Movies",
@@ -170,25 +170,13 @@
     "home": "Go home"
   },
   "footer": {
-    "tagline": "A tiny cinema, made for one person.",
+    "tagline": "Movies, series and anime in one place.",
     "tmdb": "Movie data from TMDB. This product is not endorsed or certified by TMDB.",
-    "madeWith": "Made with love"
+    "madeWith": "Made with"
   },
-  "gift": {
-    "morning": "Good morning",
-    "afternoon": "Good afternoon",
-    "evening": "Good evening",
-    "night": "It's late",
-    "welcomeTitle": "Welcome to your little cinema, {name}",
-    "together": "{days} days together",
-    "enter": "Start watching",
-    "ticket": "Admit one",
-    "daysLabel": "days together",
-    "seat": "Love seat · Row ♥",
-    "screening": "Private screening",
-    "pressEnter": "or press Enter",
-    "theme": "Accent color",
-    "themes": {
+  "theme": {
+    "label": "Accent color",
+    "presets": {
       "twilight": "Twilight",
       "rose": "Rose",
       "sakura": "Sakura",

@@ -6,7 +6,7 @@ import { useSearchStore } from '@/store/useSearchStore';
 import { cn } from '@/lib/utils';
 import Logo from './Logo';
 import AccountMenu from './AccountMenu';
-import ThemePicker from '@/components/gift/ThemePicker';
+import ThemePicker from './ThemePicker';
 import { appPath, isActivePath, NAV_LINKS } from './nav';
 
 export default function Navbar() {

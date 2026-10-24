@@ -58,7 +58,7 @@
     "animation": "Hoạt hình & Anime",
     "donghua": "Hoạt hình Trung Quốc",
     "animatedMovies": "Phim hoạt hình",
-    "romance": "Phim tình cảm cho hai ta"
+    "romance": "Phim tình cảm"
   },
   "browse": {
     "moviesTitle": "Phim lẻ",
@@ -170,25 +170,13 @@
     "home": "Về trang chủ"
   },
   "footer": {
-    "tagline": "Rạp phim nhỏ, dành riêng cho một người.",
+    "tagline": "Phim lẻ, phim bộ và anime ở cùng một nơi.",
     "tmdb": "Dữ liệu phim từ TMDB. Sản phẩm không được TMDB chứng nhận.",
-    "madeWith": "Làm bằng cả trái tim"
+    "madeWith": "Được làm với"
   },
-  "gift": {
-    "morning": "Chào buổi sáng",
-    "afternoon": "Chào buổi chiều",
-    "evening": "Chào buổi tối",
-    "night": "Khuya rồi nè",
-    "welcomeTitle": "Chào mừng {name} về rạp phim nhỏ",
-    "together": "{days} ngày bên nhau",
-    "enter": "Vào xem phim",
-    "ticket": "Vé vào cửa",
-    "daysLabel": "ngày bên nhau",
-    "seat": "Ghế đôi · Hàng ♥",
-    "screening": "Suất chiếu riêng",
-    "pressEnter": "hoặc nhấn Enter",
-    "theme": "Màu chủ đạo",
-    "themes": {
+  "theme": {
+    "label": "Màu chủ đạo",
+    "presets": {
       "twilight": "Tím hoàng hôn",
       "rose": "Hồng",
       "sakura": "Anh đào",

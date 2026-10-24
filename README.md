@@ -1,26 +1,26 @@
 # SelnaFilm
 
-A tiny private cinema for two — a movie & TV streaming web app built as a personal gift, with a
-Netflix-style UI, its own HLS player, and a Cloudflare Worker backend that runs entirely on the free tier.
+A movie & TV streaming web app — personal project. Netflix-style UI, its own HLS player, and a
+Cloudflare Worker backend that runs entirely on the free tier.
 
 > **Live demo:** _coming soon_
 >
 > This is the public showcase build. It plays the Blender Foundation's open movies (CC BY 3.0) and
-> official trailers instead of the private deployment's stream source, and uses sample personal data.
+> official trailers instead of the private deployment's stream source.
 
 ![Home](docs/screenshots/home.png)
 
-| Welcome screen | Theater watch page (own HLS player) |
+| Theater watch page (own HLS player) | Search palette (`Ctrl K`) |
 |---|---|
-| ![Welcome](docs/screenshots/welcome.png) | ![Watch](docs/screenshots/watch.png) |
+| ![Watch](docs/screenshots/watch.png) | ![Search](docs/screenshots/search.png) |
 
-| Series on air now | Search palette (`Ctrl K`) |
+| Series on air now | Title details |
 |---|---|
-| ![On air now](docs/screenshots/onair.png) | ![Search](docs/screenshots/search.png) |
+| ![On air now](docs/screenshots/onair.png) | ![Details](docs/screenshots/detail.png) |
 
-| Title details | Mobile |
-|---|---|
-| ![Details](docs/screenshots/detail.png) | <img src="docs/screenshots/mobile.png" alt="Mobile" width="260"> |
+| Mobile · Home | Mobile · Watch | Mobile · Details |
+|---|---|---|
+| <img src="docs/screenshots/mobile.png" alt="Mobile home" width="260"> | <img src="docs/screenshots/mobile-watch.png" alt="Mobile watch page" width="260"> | <img src="docs/screenshots/mobile-detail.png" alt="Mobile details" width="260"> |
 
 ---
 
@@ -37,8 +37,7 @@ Netflix-style UI, its own HLS player, and a Cloudflare Worker backend that runs 
   recently opened titles, trending today and genre shortcuts, keyboard navigation, plus a full results page.
 - **Bilingual** — Vietnamese and English UI (`/vi`, `/en`), localized TMDB metadata, readable titles
   for shows TMDB only knows in their native script.
-- **Gift touches** — a welcome screen styled as a private screening (cinema ticket with a "days together"
-  counter, curtain-opening exit), special-day greetings with falling hearts, and 8 accent themes.
+- **8 accent themes** — the accent color pair is swapped at runtime and remembered per browser.
 - Responsive down to phones, with a bottom tab bar and installable home-screen icon.
 
 ## Tech stack
@@ -90,7 +89,7 @@ flowchart LR
 - **No-framework i18n.** Typed message keys (`MessageKey` derived from the JSON), `t(key, vars)`, and
   locale-prefixed links; both locales are kept in sync.
 - **Design system.** Tailwind v4 `@theme` tokens (`bg-canvas`, `text-muted`, `accent`…); the accent pair
-  is swapped at runtime for the 8 themes, and the logo, glows and welcome screen follow it.
+  is swapped at runtime for the 8 themes, and the logo, glows and progress bars follow it.
 
 ## Getting started
 
@@ -118,11 +117,10 @@ worker/                Cloudflare Worker (Hono)
   providers/           stream provider contract + demo provider
 src/
   pages/               one file per route (lazy loaded)
-  components/          layout, media rows & cards, watch (player), gift, ui
+  components/          layout, media rows & cards, watch (player), ui
   lib/                 query definitions, media model, genres, countries
-  store/               My List, Continue watching, theme (persisted)
+  store/               My List, Continue watching, search history, theme (persisted)
   i18n/                vi / en messages
-  config/gift.ts       the personal part (sample values here)
 ```
 
 ## Credits

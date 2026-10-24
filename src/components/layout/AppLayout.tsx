@@ -6,7 +6,6 @@ import MobileTabBar from './MobileTabBar';
 import Footer from './Footer';
 import SearchModal from '@/components/ui/SearchModal';
 import Toaster from '@/components/ui/Toaster';
-import WelcomeSplash from '@/components/gift/WelcomeSplash';
 
 export default function AppLayout() {
   const { locale } = useParams();
@@ -33,7 +32,6 @@ export default function AppLayout() {
       <MobileTabBar />
       <SearchModal />
       <Toaster />
-      <WelcomeSplash />
       <ScrollRestoration />
     </I18nProvider>
   );

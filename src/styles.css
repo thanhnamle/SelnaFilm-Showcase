@@ -115,20 +115,6 @@
   animation: var(--animate-progress);
 }
 
-/* Gift effects: plain keyframes, referenced from inline styles. */
-@keyframes heart-fall {
-  0% { transform: translate3d(0, 0, 0) rotate(-10deg); opacity: 0; }
-  10% { opacity: 0.9; }
-  50% { transform: translate3d(var(--sway, 30px), 55vh, 0) rotate(12deg); }
-  90% { opacity: 0.8; }
-  100% { transform: translate3d(calc(var(--sway, 30px) * -0.5), 110vh, 0) rotate(-8deg); opacity: 0; }
-}
-
-@keyframes glow-drift {
-  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-  50% { transform: translate3d(4%, -3%, 0) scale(1.08); }
-}
-
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -136,20 +122,3 @@
   }
 }
 
-/* Welcome splash: twinkling stars, a flickering projector beam, a gently floating logo. */
-@keyframes twinkle {
-  0%, 100% { opacity: 0.12; transform: scale(0.8); }
-  50% { opacity: 0.9; transform: scale(1); }
-}
-
-@keyframes beam-flicker {
-  0%, 100% { opacity: 0.85; }
-  45% { opacity: 1; }
-  50% { opacity: 0.7; }
-  55% { opacity: 0.95; }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
